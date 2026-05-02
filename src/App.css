@@ -1,0 +1,90 @@
+/* .get {
+  font-size: large;
+  color: rgb(243, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+      
+
+  
+
+}
+
+.flexkoro{
+  display: flex;
+  gap: 4px;
+   justify-content: center;
+  align-items: center;  
+  margin-top: 20px;
+}
+
+.card{
+  border: 2px solid yellow;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+} */
+
+
+/* App.css */
+body {
+  background-color: #1a1a2e; /* ডার্ক ব্লু ব্যাকগ্রাউন্ড */
+  color: #ffffff; /* টেক্সট কালার সাদা */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.get {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e94560; /* হেডিং এর জন্য লালচে রং */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* সাধারণ কার্ড স্টাইল - সব কম্পোনেন্টের জন্য কাজ করবে */
+.card-style {
+  background-color: #16213e;
+  border: 2px solid #0f3460;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto; /* উপরে নিচে গ্যাপ এবং মাঝখানে সেন্টার */
+  max-width: 600px; /* খুব বেশি চওড়া হবে না */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* ছায়া ইফেক্ট */
+  text-align: center;
+}
+
+/* বাটন গ্রুপ স্টাইল */
+.flexkoro {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* মোবাইলে বাটনগুলো নিচে নেমে আসবে */
+}
+
+button {
+  background-color: #e94560;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+  
+}
+
+button:hover {
+  transform: scale(1.05); /* হোভার করলে একটু বড় হবে */
+  background-color: #ff2e63;
+}
+
+/* Batsman সেকশনের বিশেষ স্টাইল */
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
