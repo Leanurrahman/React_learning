@@ -23,9 +23,8 @@ return (
 
         <h3>Count: {count}</h3>
         <button onClick={handleAdd}>Add</button>
-
-        <h3>Hello</h3>
-        <h3>hello Bangladesh</h3>
+        <h3>Hi</h3>
+        
        </div>
 
 </>

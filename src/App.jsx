@@ -1,11 +1,16 @@
 
 import Counter from "./Counter";
 import Batsman from "./batmans"
-import Users from "./Users"
+
 import "./App.css";
 import { Suspense } from 'react';
 import Friends from "./Friends";
 import Count from "./count2";
+import Users from "./Users";
+import Notation from "./Notation";
+import FakeJson from "./FakeJson";
+import Btn from "./btn";
+import Counter3 from "./counter3";
 
 
 const fetchUsers = fetch("https://jsonplaceholder.typicode.com/posts")
@@ -44,13 +49,17 @@ function App() {
        <Suspense fallback={<h2>Friends are comming..</h2>}>
          <Friends FriendsPromise={FriendsPromise}></Friends>
        </Suspense>
-
-    
-     
+        
+       <Suspense fallback={<h2>Users loading...</h2>}>
+         <Users fetchUsers={fetchUsers}></Users>
+       </Suspense>
       <Counter></Counter>
       <Batsman></Batsman>
       <Count></Count>
-  
+       <Notation></Notation>
+       <FakeJson></FakeJson>
+       <Btn></Btn>
+       <Counter3></Counter3>
 
      <div className="flexkoro">
       <button onClick={handleClick}>Click Me = 1</button>

@@ -25,7 +25,16 @@
   border-radius: 20px;
 } */
 
-
+.notation {
+  background-color: #16213e;
+  border: 2px solid #0f3460;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto; /* উপরে নিচে গ্যাপ এবং মাঝখানে সেন্টার */
+  max-width: 600px; /* খুব বেশি চওড়া হবে না */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* ছায়া ইফেক্ট */
+  text-align: center;
+}
 /* App.css */
 body {
   background-color: #1a1a2e; /* ডার্ক ব্লু ব্যাকগ্রাউন্ড */
@@ -88,3 +97,72 @@ h1 {
   font-size: 3rem;
   margin: 10px 0;
 }
+
+
+
+
+
+/* পুরো পেজের ব্যাকগ্রাউন্ড এবং ফন্ট */
+body {
+  background-color: #c7c7d5; /* ডার্ক থিম ব্যাকগ্রাউন্ড */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Friends.jsx এর মেইন কন্টেইনার (যেখানে সব কার্ড থাকবে) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* এক লাইনে ৩টি কার্ড */
+  gap: 20px; /* কার্ডগুলোর মাঝখানের ফাঁকা জায়গা */
+  padding: 20px;
+}
+
+/* প্রতিটি Friend কার্ডের ডিজাইন */
+.friend-card {
+  background-color: #16213e; /* কার্ডের ব্যাকগ্রাউন্ড */
+  border: 1px solid #0f3460;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* মাউস নিলে কার্ড একটু উপরে উঠবে */
+.friend-card:hover {
+  transform: translateY(-5px);
+  border-color: #e94560;
+}
+
+/* টেক্সট স্টাইলিং */
+.friend-card h4 {
+  color: #e94560; /* ID এর কালার */
+  margin-bottom: 5px;
+}
+
+.friend-card h2 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.friend-card p {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+/* রেসপন্সিভ ডিজাইন (মোবাইলের জন্য) */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* ট্যাবলেটে ২টি কার্ড */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr; /* মোবাইলে ১টি কার্ড */
+  }
+}
+
